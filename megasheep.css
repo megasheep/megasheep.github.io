@@ -3,6 +3,8 @@
 * {
   box-sizing: inherit;
   font-family: "Open Sans", sans-serif;
+  color: #222326;
+  font-size: 1.5rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -12,16 +14,16 @@
 }
 
 ::selection {
-  background-color: yellow;
+  background-color: #222326;
+  color: #f1efea;
 }
 
-html {
+html,
+body {
   box-sizing: border-box;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  background-color: green;
-  color: white;
-  font-size: 1.5rem;
+  background-color: #f1efea;
 }
 
 /*# sourceMappingURL=megasheep.css.map */
