@@ -1,29 +1,43 @@
 /* Colors */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 * {
-  box-sizing: inherit;
-  font-family: "Open Sans", sans-serif;
-  color: #222326;
-  font-size: 1.5rem;
-  list-style: none;
+  position: relative;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1;
   text-decoration: none;
+  list-style: none;
+  user-select: none;
+  -webkit-user-drag: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: #222326;
-  color: #f1efea;
+  background-color: black;
+  color: white;
 }
 
 html,
 body {
-  box-sizing: border-box;
-  font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  background-color: #f1efea;
+  background-color: #48DC7A;
+}
+
+ul {
+  padding: 1rem 2rem;
+}
+ul li {
+  padding: 0.5rem 0rem;
+}
+ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  color: #FFFFFF;
+}
+ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 /*# sourceMappingURL=megasheep.css.map */

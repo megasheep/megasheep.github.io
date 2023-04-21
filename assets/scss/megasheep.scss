@@ -1,33 +1,54 @@
 @import '_rem';
 @import "_variables";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 *
 {
-    box-sizing: inherit;
-    font-family: 'Open Sans', sans-serif;
-    color: $color-dark;
-    font-size: rem(24);
-    list-style: none;
+    position: relative;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1;
     text-decoration: none;
+    list-style: none;
+    user-select: none;
+    -webkit-user-drag: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection
 {
-    background-color: $color-dark;
-    color: $color-light;
+    background-color: black;
+    color: white;
 }
 
 html,
 body
 {
-    box-sizing: border-box;
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
-    background-color: $color-light;
+    background-color: $color-background;
+}
+
+ul
+{
+    padding: rem(16) rem(32);
+
+    li
+    {
+        padding: rem(8) rem(0);
+
+        a
+        {
+            font-family: 'Montserrat', sans-serif;
+            font-size: rem(64);
+            color: $color-text-primary;
+
+            &:hover
+            {
+                text-decoration: underline;
+                text-underline-offset: rem(4);
+            }
+        }
+    }
 }
