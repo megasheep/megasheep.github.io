@@ -83,6 +83,7 @@ ul
             line-height: 1;
             text-decoration: none;
             text-shadow: rem(4) rem(4) rem(0) $shadow;
+            animation: none;
 
             &:hover,
             &:focus,
@@ -91,7 +92,6 @@ ul
                 text-decoration: underline;
                 text-decoration-thickness: rem(4);
                 text-underline-offset: rem(6);
-                text-shadow: rem(4) rem(4) rem(0) $shadow;
                 animation: link-animation 4s infinite;
             }
         }

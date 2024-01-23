@@ -71,12 +71,12 @@ ul li a {
   line-height: 1;
   text-decoration: none;
   text-shadow: 0.25rem 0.25rem 0rem #000000;
+  animation: none;
 }
 ul li a:hover, ul li a:focus, ul li a:active {
   text-decoration: underline;
   text-decoration-thickness: 0.25rem;
   text-underline-offset: 0.375rem;
-  text-shadow: 0.25rem 0.25rem 0rem #000000;
   animation: link-animation 4s infinite;
 }
 
