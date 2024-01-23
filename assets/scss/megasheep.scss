@@ -84,7 +84,9 @@ ul
             text-decoration: none;
             text-shadow: rem(4) rem(4) rem(0) $shadow;
 
-            &:hover
+            &:hover,
+            &:focus,
+            &:active
             {
                 text-decoration: underline;
                 text-decoration-thickness: rem(4);
