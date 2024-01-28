@@ -72,8 +72,22 @@ ul
 
     li
     {
+
+        @for $i from 0 through 5
+        {
+            &:nth-child(#{$i+1})
+            {
+                a:hover,
+                a:active
+                {
+                    color: hsl($i*51, 100%, 64%);
+                }
+            }
+        }
+
         a
         {
+            display: inline-block;
             font-size: rem(48);
             color: $text;
             font-family: "Montserrat", sans-serif;
@@ -86,7 +100,6 @@ ul
             animation: none;
 
             &:hover,
-            &:focus,
             &:active
             {
                 text-decoration: underline;
@@ -94,24 +107,32 @@ ul
                 text-underline-offset: rem(6);
                 animation: link-animation 4s infinite;
             }
+
+            &:focus-visible
+            {
+                outline-width: rem(6);
+                outline-offset: rem(2);
+                outline-style: dashed;
+                outline-color: $text;
+            }
         }
     }
 }
 
 @keyframes link-animation {
   0% {
-    color: hsl(0, 100%, 64%);
+    filter: hue-rotate(0deg);
   }
   25% {
-    color: hsl(90, 100%, 64%);
+    filter: hue-rotate(90deg);
   }
   50% {
-    color: hsl(180, 100%, 64%);
+    filter: hue-rotate(180deg);
   }
   75% {
-    color: hsl(270, 100%, 64%);
+    filter: hue-rotate(270deg);
   }
   100% {
-    color: hsl(360, 100%, 64%);
+    filter: hue-rotate(360deg);
   }
 }

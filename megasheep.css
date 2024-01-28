@@ -61,7 +61,32 @@ ul {
   width: 100%;
   max-width: 50rem;
 }
+ul li:nth-child(1) a:hover,
+ul li:nth-child(1) a:active {
+  color: hsl(0, 100%, 64%);
+}
+ul li:nth-child(2) a:hover,
+ul li:nth-child(2) a:active {
+  color: hsl(51, 100%, 64%);
+}
+ul li:nth-child(3) a:hover,
+ul li:nth-child(3) a:active {
+  color: hsl(102, 100%, 64%);
+}
+ul li:nth-child(4) a:hover,
+ul li:nth-child(4) a:active {
+  color: hsl(153, 100%, 64%);
+}
+ul li:nth-child(5) a:hover,
+ul li:nth-child(5) a:active {
+  color: hsl(204, 100%, 64%);
+}
+ul li:nth-child(6) a:hover,
+ul li:nth-child(6) a:active {
+  color: hsl(255, 100%, 64%);
+}
 ul li a {
+  display: inline-block;
   font-size: 3rem;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -73,28 +98,34 @@ ul li a {
   text-shadow: 0.25rem 0.25rem 0rem #000000;
   animation: none;
 }
-ul li a:hover, ul li a:focus, ul li a:active {
+ul li a:hover, ul li a:active {
   text-decoration: underline;
   text-decoration-thickness: 0.25rem;
   text-underline-offset: 0.375rem;
   animation: link-animation 4s infinite;
 }
+ul li a:focus-visible {
+  outline-width: 0.375rem;
+  outline-offset: 0.125rem;
+  outline-style: dashed;
+  outline-color: #ffffff;
+}
 
 @keyframes link-animation {
   0% {
-    color: hsl(0, 100%, 64%);
+    filter: hue-rotate(0deg);
   }
   25% {
-    color: hsl(90, 100%, 64%);
+    filter: hue-rotate(90deg);
   }
   50% {
-    color: hsl(180, 100%, 64%);
+    filter: hue-rotate(180deg);
   }
   75% {
-    color: hsl(270, 100%, 64%);
+    filter: hue-rotate(270deg);
   }
   100% {
-    color: hsl(0, 100%, 64%);
+    filter: hue-rotate(360deg);
   }
 }
 
